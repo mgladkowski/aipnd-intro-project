@@ -1,0 +1,17 @@
+Use a Pre-trained Image Classifier to Identify Dog Breeds
+
+Final Results Table
+
+
+Folder              uploaded_images/
+Total images        5         
+Dog images          3         
+Not-dog images      2         
+
+
+                               % not-dog    % dogs  % breeds   % match    time
+        CNN Model Architecture   correct   correct   correct    labels elapsed
+
+2019-12-04 15:47        Resnet     100.0     100.0       0.0      20.0   0:0:0
+2019-12-04 15:47       Alexnet      50.0      66.7       0.0      20.0   0:0:0
+2019-12-04 15:47           Vgg     100.0     100.0      66.7      80.0   0:0:4

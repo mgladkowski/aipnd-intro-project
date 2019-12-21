@@ -1,0 +1,97 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 5 key-value pairs.
+Below are 5 of them:
+ 1 key:              Weimaraner_03.jpg  label:                 weimaraner
+ 2 key:              Weimaraner_02.jpg  label:                 weimaraner
+ 3 key:              Weimaraner_01.jpg  label:                 weimaraner
+ 4 key:              Coffee_mug_01.jpg  label:                 coffee mug
+ 5 key:                     Cat_01.jpg  label:                        cat
+
+     MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug
+
+ NOT A MATCH:
+
+             Weimaraner_03.jpg: 
+Real:                 weimaraner   Classifier: african grey, african gray, psittacus erithacus
+
+             Weimaraner_02.jpg: 
+Real:                 weimaraner   Classifier:       chesapeake bay retriever
+
+             Weimaraner_01.jpg: 
+Real:                 weimaraner   Classifier:       chesapeake bay retriever
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:                     schipperke
+
+# Total Images 5 # Matches: 1 # NOT Matches: 4
+
+     MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+             Weimaraner_03.jpg: 
+Real:                 weimaraner   Classifier: african grey, african gray, psittacus erithacus  
+PetLabelDog: 1  ClassLabelDog: 0
+
+             Weimaraner_02.jpg: 
+Real:                 weimaraner   Classifier:       chesapeake bay retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Weimaraner_01.jpg: 
+Real:                 weimaraner   Classifier:       chesapeake bay retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:                     schipperke  
+PetLabelDog: 0  ClassLabelDog: 1
+
+# Total Images 5 # Matches: 1 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  5  N Dog Images:  3  N NotDog Images:  2 
+Pct Corr dog:  66.7 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  5  N Dog Images:  3  N NotDog Images:  2 
+Pct Corr dog:  66.7 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+----------------------------------------------
+Results for CNN architecture : ALEXNET
+
+Number of images         : 5
+Number of dog images     : 3
+Number of non-dog images : 2
+
+Percent dogs correct     :  66.67
+Percent breeds correct   :   0.00
+Percent not dogs correct :  50.00
+Percent matches correct  :  20.00
+
+
+The following images were incorrectly classified as 'dog' or 'not dog':
+
+Filename                     Pet label            Classifier label            
+--------                     -----------          ----------------            
+Weimaraner_03.jpg            weimaraner           african grey, african gray, ps
+Cat_01.jpg                   cat                  schipperke                  
+
+
+The following dogs have incorrectly classified breeds:
+
+Filename                     Pet label            Classifier label            
+--------                     -----------          ----------------            
+Weimaraner_02.jpg            weimaraner           chesapeake bay retriever    
+Weimaraner_01.jpg            weimaraner           chesapeake bay retriever    
+
+** Total Elapsed Runtime: 0:0:0

@@ -1,0 +1,94 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 5 key-value pairs.
+Below are 5 of them:
+ 1 key:              Weimaraner_03.jpg  label:                 weimaraner
+ 2 key:              Weimaraner_02.jpg  label:                 weimaraner
+ 3 key:              Weimaraner_01.jpg  label:                 weimaraner
+ 4 key:              Coffee_mug_01.jpg  label:                 coffee mug
+ 5 key:                     Cat_01.jpg  label:                        cat
+
+     MATCH:
+
+             Weimaraner_02.jpg: 
+Real:                 weimaraner   Classifier:                     weimaraner
+
+             Weimaraner_01.jpg: 
+Real:                 weimaraner   Classifier:                     weimaraner
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat
+
+ NOT A MATCH:
+
+             Weimaraner_03.jpg: 
+Real:                 weimaraner   Classifier:    doberman, doberman pinscher
+
+# Total Images 5 # Matches: 4 # NOT Matches: 1
+
+     MATCH:
+
+             Weimaraner_02.jpg: 
+Real:                 weimaraner   Classifier:                     weimaraner  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Weimaraner_01.jpg: 
+Real:                 weimaraner   Classifier:                     weimaraner  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+             Weimaraner_03.jpg: 
+Real:                 weimaraner   Classifier:    doberman, doberman pinscher  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 5 # Matches: 4 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  5  N Dog Images:  3  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  66.7
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  5  N Dog Images:  3  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  66.7
+
+----------------------------------------------
+Results for CNN architecture : VGG
+
+Number of images         : 5
+Number of dog images     : 3
+Number of non-dog images : 2
+
+Percent dogs correct     : 100.00
+Percent breeds correct   :  66.67
+Percent not dogs correct : 100.00
+Percent matches correct  :  80.00
+
+
+The following images were incorrectly classified as 'dog' or 'not dog':
+
+Filename                     Pet label            Classifier label            
+--------                     -----------          ----------------            
+
+
+The following dogs have incorrectly classified breeds:
+
+Filename                     Pet label            Classifier label            
+--------                     -----------          ----------------            
+Weimaraner_03.jpg            weimaraner           doberman, doberman pinscher 
+
+** Total Elapsed Runtime: 0:0:4
